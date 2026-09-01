@@ -1,5 +1,6 @@
 # estudio_bicicletas_biki_valladolid
-Estudio de funcionamiento de servicio de alquiler de bicicletas BIKI en Valladolid 
+Estudio del funcionamiento de servicio de alquiler de bicicletas BIKI en Valladolid 
+
 # 🚴‍♂️ Análisis de Estado, Distribución y Tendencias de BIKI Valladolid
 
 Este repositorio contiene un análisis de datos exhaustivo y visual sobre el sistema de bicicletas públicas de Valladolid (**BIKI**), desarrollado íntegramente en un Jupyter Notebook con Python. El estudio abarca desde el estado de ocupación de las estaciones en tiempo real hasta modelos de crecimiento temporal, preferencias de flota (mecánica vs. eléctrica) y un simulador de rentabilidad de tarifas.
@@ -43,10 +44,10 @@ El proyecto está dividido en bloques estratégicos, que responden a preguntas c
 
 ## 🛠️ Tecnologías y Librerías Utilizadas
 
-El análisis ha sido desarrollado utilizando el ecosistema de ciencia de datos de **Python 3**:
+El análisis ha sido desarrollado utilizando el ecosistema  **Python 3.12**:
 * **Pandas:** Procesamiento, limpieza de datos y manipulación de DataFrames.
 * **Matplotlib & Seaborn:** Generación de gráficos estáticos de series temporales y diagramas de barras de alta calidad.
-* **Plotly Express:** Creación de cuadros de mando y gráficos de dispersión/burbujas interactivos con soporte de *hovertemplate*.
+* **Plotly Express:** Creación de cuadros de mando y gráficos de dispersión/burbujas interactivos
 * **IO (StringIO / BytesIO):** Gestión eficiente de flujos de datos en memoria para la carga de datos consolidados.
 
 ---
@@ -73,8 +74,21 @@ El análisis ha sido desarrollado utilizando el ecosistema de ciencia de datos d
 
 ---
 
-## 📋 Conclusiones del Estudio
+## Conclusiones del Estudio
 
 * **La Consolidación de BIKI:** El sistema ha experimentado un crecimiento estructural ascendente, duplicando con creces su base de usuarios activos desde su lanzamiento.
 * **La "Eléctrico-dependencia":** Valladolid se ha transformado en una ciudad que prioriza el pedaleo asistido para ahorrar tiempos de viaje en distancias medias y salvar barreras geográficas (como la subida a Parquesol).
 * **Uso Inteligente del Servicio:** El análisis de tarifas demuestra que para un usuario cotidiano (2 viajes por día laborable), la adquisición de bonos mensuales amortiza la inversión rápidamente, de forma especial en la flota eléctrica.
+
+## Próximas líneas de investigación:
+
+1. **Elasticidad temporal: estacionalidad oferta vs demanda**
+- Eficiencia operativa vs logística
+- Objetivo: cruzar % de ocupación actual de cada distrito con la tendencia de usuarios activos de septiembre
+- Prever qué nodos o estaciones pueden colapsar por exceso o falta de bicicletas.
+
+2. **Tipo de flota vs perfil de pendiente (Topografía de la red)**
+
+- Planificar activos
+- Objetivo: cruzar % de cuota de mercado de bicicletas eléctricas con un índice de pendiente por zonas (comparando esfuerzo de zona de mayor pendiente con otra llana)
+- ¿Es necesario redistribuir la flota?  

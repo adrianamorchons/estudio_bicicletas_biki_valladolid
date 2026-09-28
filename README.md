@@ -91,4 +91,7 @@ El análisis ha sido desarrollado utilizando el ecosistema  **Python 3.12**:
 
 - Planificar activos
 - Objetivo: cruzar % de cuota de mercado de bicicletas eléctricas con un índice de pendiente por zonas (comparando esfuerzo de zona de mayor pendiente con otra llana)
-- ¿Es necesario redistribuir la flota?  
+- ¿Es necesario redistribuir la flota?
+
+3. A futuro:
+- Realizar los cambios necesarios, si el municipio de Zaratán, perteneciente al alfoz de Valladolid, se incluye a corto plazo en las rutas y lugar de posibles nuevas estaciones del servicio de bicicletas BIKI, y trazar un posible plano en base a esta nueva incorporación. 

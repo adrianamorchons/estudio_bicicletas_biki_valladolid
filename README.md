@@ -83,5 +83,5 @@ El análisis ha sido desarrollado utilizando el ecosistema de ciencia de datos d
 
 ## 🔮 Próximas líneas de investigación
 
-* **Impacto por Expansión al Alfoz (Caso Zaratán):** Evaluar el impacto en el comportamiento de la red, simular la demanda potencial y trazar la ubicación óptima de nuevas estaciones ante la potencial integración de municipios del alfoz vallisoletano como Zaratán.
+* **Impacto por Expansión al Alfoz (Caso Zaratán y Arroyo de la Encomienda):** Evaluar el impacto en el comportamiento de la red, simular la demanda potencial y trazar la ubicación óptima de nuevas estaciones ante la potencial integración de municipios del alfoz vallisoletano como Zaratán y Arroyo de la Encomienda.
 * **Elasticidad Oferta-Demanda Climatológica:** Cruzar variables meteorológicas históricas con las simulaciones de Montecarlo para refinar el cálculo de pérdida de disponibilidad de bicicletas en días de lluvia o heladas intensas.

@@ -4,11 +4,6 @@ Análisis avanzado de datos, modelado predictivo y plataforma web interactiva en
 
 Este proyecto combina un exhaustivo estudio de **Data Science** (Clustering, Regresiones y Simulaciones Estocásticas) desarrollado en un entorno de Jupyter Notebook, con una aplicación web en producción desplegada de forma continua a través de **Replit Agent**.
 
-# 🚲 Pucela sobre Ruedas: Panel de Movilidad BIKI Valladolid
-
-[![Ver Mapa en Vivo](https://shields.io)](https://bb0c7724-700e-48fb-9eaa-f52704303076-00-k8hfe0oijev4.archer.replit.dev)
-
-
 ---
 
 ## 📊 Arquitectura y Componentes del Proyecto

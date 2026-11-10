@@ -27,7 +27,7 @@ El proyecto está desarrollado completamente en **Python** dentro de un entorno 
 El cuaderno de Jupyter se divide en bloques analíticos:
 
 ### 1. Análisis de Estado y Distribución de Estaciones
-Se calculan los porcentajes de ocupación en tiempo real para las 96 estaciones fijas de la red, identificando automáticamente los puntos críticos de **saturación** (ej. *Facultad de Medicina* con >95% de ocupación) y de **vaciamiento** (ej. *Plaza de Santa Cruz* con <14%).
+Se calculan los porcentajes de ocupación en tiempo real para las 104 estaciones fijas de la red, identificando automáticamente los puntos críticos de **saturación** (ej. *Facultad de Medicina* con >95% de ocupación) y de **vaciamiento** (ej. *Plaza de Santa Cruz* con <14%).
 
 ### 2. Segmentación Avanzada con Machine Learning (K-Means)
 Se implementa un modelo de **Clustering K-Means** (normalizando los datos con `StandardScaler`) para clasificar de manera automática las estaciones en 4 perfiles operativos según su capacidad, ocupación y anclajes libres:

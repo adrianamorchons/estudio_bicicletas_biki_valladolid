@@ -33,11 +33,15 @@ El core de la investigación se divide en tres grandes áreas de análisis avanz
 
 El análisis y desarrollo de los modelos se ha realizado bajo el entorno de **Python 3.12** utilizando el siguiente ecosistema de librerías:
 
-* **Manipulación de Datos:** `pandas`, `numpy`
-* **Visualización de Datos e Indicadores:** `matplotlib`, `seaborn`
-* **Mapas Interactivos Geoespaciales:** `folium`, `geopy`
-* **Machine Learning (Clustering):** `scikit-learn` (StandardScaler, KMeans)
-* **Ciencia de Redes:** `networkx`
+* **Análisis y Manipulación de Datos:** `pandas` y `numpy` para la limpieza, consolidación y estructuración de los históricos de AUVASA y datos climatológicos.
+* **Visualización Estática:** `matplotlib` y `seaborn` para la generación de gráficos de tendencias, cuotas de mercado y la pirámide poblacional.
+* **Modelado Geoespacial e Interactividad:** 
+  * `folium`: Librería de Python utilizada para la generación de mapas interactivos basados en datos geográficos.
+  * **Leaflet.js**: El motor JavaScript de código abierto que corre por detrás de `folium`, utilizado para renderizar los mapas web dinámicos, el control de zoom y los marcadores interactivos.
+  * `geopy`: Para los procesos auxiliares de geocodificación de direcciones urbanas.
+* **Machine Learning:** `scikit-learn` (StandardScaler y KMeans) para el algoritmo de segmentación no supervisada de las estaciones.
+* **Ciencia de Redes:** `networkx` para el análisis de centralidad y conectividad de nodos.
+
 
 ---
 

@@ -1,58 +1,43 @@
-# 🚲 BIKI Valladolid - Análisis de Datos, Machine Learning y Simulación Logística
+# Análisis de Estado, Tendencias y Simulación Logística del Sistema BIKI (Valladolid)
 
-Este repositorio contiene un análisis avanzado de datos, modelado predictivo y simulación  del sistema de bicicletas **BIKI** de la ciudad de Valladolid, gestionado por la empresa municipal **AUVASA**. A través de este proyecto se evalúa el estado operativo de la red, la penetración de su aplicación móvil, preferencias de los usuarios, optimización de rutas según perfiles demográficos y el riesgo de colapso en estaciones clave mediante métodos estadísticos y de Machine Learning.
-
-El análisis abarca el comportamiento histórico real del servicio desde su lanzamiento en **febrero de 2023 hasta agosto de 2026** (se actualizará con los datos de los meses siguientes). Los principales hallazgos revelan:
-1. **Fidelización del Usuario:** El servicio ha superado la fase de adopción masiva llegando a más de 17.000 usuarios registrados, y se mantiene estable con una base de 10.000 a 12.000 usuarios activos mensuales.
-2. **Dominio Eléctrico:** La bicicleta eléctrica domina el mercado con más del 82% de los viajes mensuales, debido a la topografía de la ciudad (ej. desniveles hacia el barrio de Parquesol) y a la búsqueda de confort frente a extremos climáticos.
-3. **Estacionalidad Académica:** Se detecta un incremento interanual de uso de entre el **37% y el 45% durante los meses de septiembre y octubre**, impulsado directamente por el retorno de la comunidad universitaria y escolar.
+Este proyecto realiza un análisis integral de datos, modelado predictivo y simulación del sistema de bicicletas públicas **BIKI de Valladolid** (gestionado por AUVASA). Utilizando técnicas de Ciencia de Datos y Machine Learning, el estudio abarca desde la detección de puntos de estrés en la red actual hasta la proyección de colapsos del sistema y simulaciones para la expansión geográfica al alfoz.
 
 ---
 
-## 🛠️ Stack y Librerías Utilizadas
+## 📊 Estructura del Análisis
 
-El proyecto está desarrollado completamente en **Python** dentro de un entorno Jupyter Notebook, utilizando el siguiente stack tecnológico:
+El core de la investigación se divide en tres grandes áreas de análisis avanzado:
 
-*   **Manipulación de Datos:** `pandas`, `numpy`, `io`.
-*   **Machine Learning:** `scikit-learn` (`KMeans`, `StandardScaler`).
-*   **Ciencia de Redes:** `networkx` (análisis de centralidad de intermediación).
-*   **Modelado Estadístico:** Simulación de Montecarlo (distribuciones normales de probabilidad).
-*   **Visualización de Datos:** `matplotlib`, `seaborn`, `plotly.express`.
-*   **Análisis Geoespacial:** `folium`, `geopy` (mapas interactivos basados en OpenStreetMap).
+### 1. Diagnóstico Geográfico y Operativo de la Red
+* **Detección de Puntos Críticos:** Identificación de estaciones bajo estrés por saturación (alta ocupación) o vaciamiento (falta de flota).
+  * *Zonas críticas por saturación:* Facultad de Medicina (95.65% de ocupación), Polideportivo Ponce de León (91.30%) y Barrio Arcas Reales (90.91%).
+  * *Zonas críticas por vaciamiento:* Plaza de Santa Cruz (13.33% de ocupación) y Calle de Andalucía (15.38%).
+* **Preferencias de Flota:** Evaluación de cuota de mercado entre bicicletas mecánicas y asistidas (eléctricas). El modelo demuestra un dominio absoluto de la bicicleta eléctrica, acaparando una **media anual del 82.56% de los viajes**, debido a la topografía (ej. acceso a Parquesol) y comodidad del usuario.
+
+### 2. Modelado de Tendencias y Regresión Predictiva
+* **Correlación Climatológica y Social:** Análisis de estacionalidad cruzando datos de uso con registros de temperatura media mensual de Valladolid. El modelo revela un coeficiente de Pearson moderado-bajo, demostrando que los hábitos están guiados por el calendario laboral/escolar (picos masivos de adopción en septiembre y octubre de +37.7% y +45.8% interanual) por encima de las variables térmicas.
+* **Predicción de Colapso del Sistema:** Implementación de un modelo de **Regresión Lineal** basado en el histórico de altas (febrero 2023 - septiembre 2026). Con una tasa de crecimiento de **213 usuarios nuevos al mes** ($y = 212.89x + 6286.53$), el sistema cruzó el umbral crítico de estrés logístico (9 usuarios por anclaje fijo) en **septiembre de 2026** al alcanzar los 18,443 registros, confirmando la necesidad de ampliar la infraestructura.
+
+### 3. Machine Learning y Simulaciones Estadísticas
+* **Segmentación de Estaciones (Clustering K-Means):** Agrupación no supervisada utilizando Scikit-Learn (basada en capacidad total, % de ocupación y docks libres). El algoritmo clasificó la red de forma matemática en 4 perfiles logísticos:
+  * *Nodos Críticos / Alta Saturación* (Vaciado urgente).
+  * *Zonas de Vaciamiento / Alta Disponibilidad* (Inyección de flota).
+  * *Capacidad Media / Uso Estable* (Equilibrio orgánico).
+  * *Baja Capacidad / Estaciones Periféricas* (Alfoz).
+* **Simulación de Montecarlo (Gestión de Inventario):** Modelado de 10,000 escenarios diarios de operación en hora punta. Para el nodo de Plaza Circular, se calculó una **probabilidad de stockout del 4.36%**, determinando que se requiere un **stock de seguridad de 9 bicicletas** y un **punto de reposición óptimo de 27 unidades** para mitigar la volatilidad.
+* **Simulación de Expansión (Zaratán):** Proyección estadística para la futura estación de Plaza de la Ronda (Zaratán). El modelo determinó que una base inicial de 30 anclajes tendría un **10.84% de probabilidad de colapso**, recomendando un objetivo logístico real de **34 unidades mínimas** (35 anclajes físicos con un 60% de ocupación matutina: 15 eléctricas y 3 mecánicas) para absorber la demanda del alfoz.
 
 ---
 
-## 🔍 Estructura del Análisis e Implementación Técnica
+## 🛠️ Tecnologías y Librerías Utilizadas
 
-El cuaderno de Jupyter se divide en bloques analíticos:
+El análisis y desarrollo de los modelos se ha realizado bajo el entorno de **Python 3.12** utilizando el siguiente ecosistema de librerías:
 
-### 1. Análisis de Estado y Distribución de Estaciones
-Se calculan los porcentajes de ocupación en tiempo real para las 104 estaciones fijas de la red, identificando automáticamente los puntos críticos de **saturación** (ej. *Facultad de Medicina* con >95% de ocupación) y de **vaciamiento** (ej. *Plaza de Santa Cruz* con <14%).
-
-### 2. Segmentación Avanzada con Machine Learning (K-Means)
-Se implementa un modelo de **Clustering K-Means** (normalizando los datos con `StandardScaler`) para clasificar de manera automática las estaciones en 4 perfiles operativos según su capacidad, ocupación y anclajes libres:
-*   *Nodos Críticos / Alta Saturación*
-*   *Zonas de Vaciamiento / Alta Disponibilidad*
-*   *Capacidad Media / Uso Estable*
-*   *Baja Capacidad / Estaciones Periféricas (Alfoz)*
-
-### 3. Ciencia de Redes y Rutas Óptimas por Perfil
-Utilizando la librería `networkx`, se modela la red como un grafo interconectado por distancias ciclistas. Se diseñan y trazan rutas óptimas para tres perfiles de usuario identificados en Valladolid:
-*   **Estudiante UVA (Norte):** Ruta llana de corta distancia ideal para bicicletas mecánicas.
-*   **Estudiante UEMC / Personal Sanitario (Sureste):** Ruta periférica larga idónea para flota eléctrica.
-*   **Trabajador Pendular (Oeste):** Ruta directa con fuerte pendiente hacia el barrio de Parquesol, requiriendo asistencia eléctrica obligatoria.
-
-### 4. Simulación de Montecarlo: Riesgo de Colapso Logístico
-Se desarrollan **10.000 iteraciones logísticas** basadas en la distribución normal de la demanda en hora punta para evaluar la probabilidad de fallo por falta de anclajes o vehículos. El modelo calcula automáticamente:
-*   **Probabilidad de Stockout (Colapso):** Determina el riesgo porcentual de fallo en estaciones saturadas (ej. Plaza Circular).
-*   **Stock de Seguridad:** El colchón de unidades necesario para absorber la volatilidad climatológica o social.
-*   **Punto de Reposición Óptimo (ROP):** El inventario ideal que los operarios de AUVASA deben mantener en la estación para garantizar un 95% de confianza en el servicio.
-
-### 5. Simulación de Expansión Geográfica (Alfoz)
-Se proyecta y simula mediante Montecarlo el comportamiento de una futura estación en el municipio colindante de **Zaratán (Plaza de la Ronda)**, estimando su volatilidad por pendientes y determinando que su capacidad inicial requeriría un objetivo logístico real de 35 anclajes para mitigar un riesgo de colapso del 12.3%.
-
-### 6. Cartografía Geoespacial Interactiva
-Generación de mapas interactivos (`mapa_rutas_biki.html`) mediante `folium` que permiten visualizar sobre la geografía real de Valladolid la ubicación de las estaciones, su estado crítico por colores (Rojo: Saturado, Azul: Vacío, Verde: Estable) y el trazado de las redes de conectividad del campus.
+* **Manipulación de Datos:** `pandas`, `numpy`
+* **Visualización de Datos e Indicadores:** `matplotlib`, `seaborn`
+* **Mapas Interactivos Geoespaciales:** `folium`, `geopy`
+* **Machine Learning (Clustering):** `scikit-learn` (StandardScaler, KMeans)
+* **Ciencia de Redes:** `networkx`
 
 ---
 
@@ -61,19 +46,28 @@ Generación de mapas interactivos (`mapa_rutas_biki.html`) mediante `folium` que
 1. **Clonar el repositorio:**
    ```bash
    git clone https://github.com
-   cd biki-valladolid-analytics
+   cd REPOSITORIO_BIKI
    ```
 
 2. **Instalar las dependencias:**
-   Se recomienda usar un entorno virtual. Puedes instalar los paquetes necesarios ejecutando:
    ```bash
-   pip install pandas numpy matplotlib seaborn plotly scikit-learn networkx folium geopy
+   pip install pandas numpy notebook matplotlib seaborn scikit-learn networkx folium geopy
    ```
 
-3. **Abrir el cuaderno:**
-   Ejecuta Jupyter Notebook o JupyterLab y abre el archivo `.ipynb` para ver el análisis paso a paso y generar los mapas interactivos HTML locales.
+3. **Ejecutar el Notebook:**
+   Abra el cuaderno de Jupyter para reproducir el análisis paso a paso:
    ```bash
-   jupyter notebook
+   jupyter notebook analisis_biki_valladolid.ipynb
    ```
 
+---
 
+## 🗺️ Visualización de Mapas Interactivos
+
+Al ejecutar las celdas del **Bloque 12**, el script generará automáticamente un archivo HTML dinámico en la raíz del proyecto:
+* `mapa_rutas_biki.html`: Contiene la georreferenciación de las estaciones, cuadrantes de color inteligente según su nivel de criticidad en tiempo real y el trazado de las rutas óptimas por perfil de usuario (UVA Norte, UEMC Sureste y Parquesol Oeste).
+
+Puedes abrirlo directamente en tu navegador desde la terminal con:
+```bash
+python -c "import webbrowser, os; webbrowser.open('file://' + os.path.abspath('mapa_rutas_biki.html'))"
+```

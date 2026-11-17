@@ -83,8 +83,8 @@ El proyecto ha sido desarrollado en **Python 3.12** utilizando el siguiente ecos
 
 ## MAPA INTERACTIVO GENERADO CON LEAFLET: Simulación Biki Valladolid (recorrido real) 
 
-Haz clic en la imagen para abrir el mapa interactivo en pantalla completa (con zoom y etiquetas):
 
-👉 **[Abrir el mapa interactivo en pantalla completa](https://github.io)**
+👉 **[Abrir el mapa interactivo en pantalla completa (con zoom y etiquetas)](https://github.io)**
+
 
 

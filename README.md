@@ -29,13 +29,6 @@ La investigación se estructura en **cinco grandes bloques metodológicos**:
 * **Ciencia de Redes (`NetworkX`):** Cálculo de centralidad de intermediación para identificar estaciones puente críticas (como **Calle Arca Real**, **Plaza Circular** y **Calle Joaquín Velasco Martín**).
 * **Simulación de Montecarlo (Gestión de Inventario):** Modelado de **10.000 escenarios** en hora punta. Para **Plaza Circular** (26 anclajes) se estima un **4,5 %** de riesgo de colapso, determinando un *stock* de seguridad de **9 unidades** y un punto de reposición óptimo de **27 unidades** (95 % de confianza). Para la futura estación de **Zaratán – Plaza de la Ronda**, la simulación aconseja dimensionar **35 anclajes** (frente a los 30 iniciales) para cubrir el punto óptimo de **34 unidades**.
 
-#### Visualizaciones de Clustering, Redes y Montecarlo
-![Clustering de estaciones K-Means](graficos_mapas/luster_estaciones.png)
-![Segmentación de perfiles operativos](graficos_mapas/segmentacion%20.png)
-![Centralidad y nodos puente de la red](graficos_mapas/nodos.png)
-![Simulación de riesgo de colapso](graficos_mapas/riesgo_colapso.png)
-![Simulación de capacidad en Zaratán](graficos_mapas/simulacion_zaratan.png)
-![Demanda estimada en Zaratán](graficos_mapas/demanda_zaratan.png)
 
 ---
 

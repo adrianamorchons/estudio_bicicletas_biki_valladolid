@@ -84,6 +84,7 @@ El proyecto ha sido desarrollado en **Python 3.12** utilizando el siguiente ecos
 
 ![Simulación de ruta real BIKI Valladolid](graficos_mapas/mapa_simulacion_biki.png)
 
+<img width="1594" height="932" alt="mapa_simulación_biki " src="https://github.com/user-attachments/assets/c11b5e59-6b81-42df-b87f-37654aceb956" />
 
 
 

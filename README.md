@@ -81,11 +81,11 @@ El proyecto ha sido desarrollado en **Python 3.12** utilizando el siguiente ecos
 
 ---
 
-## 🗺️ Archivos y Mapas Interactivos Generados
+## MAPA INTERACTIVO GENERADO CON LEAFLET: Simulación Biki Valladolid (recorrido real) 
 
-Al ejecutar las celdas correspondientes, el cuaderno exporta automáticamente en la raíz del proyecto:
-* `mapa_interactivo_biki_valladolid.html`: Diagnóstico visual de estaciones críticas de la red actual.
-* `mapa_corredores_biki.html`: Trazado de los principales corredores universitarios, sanitarios y de pendiente.
-* `mapa_expansion_alfoz_biki.html`: Ubicación estratégica de las nuevas estaciones en **Zaratán** y **Arroyo de la Encomienda**.
-* `mapa_simulacion_biki.html`: Recorrido ciclista real puerta a puerta (**OSRM**) entre Parquesol y la Facultad de Medicina.
-* `balance_expansion_biki.xlsx` y `proyeccion_5_anos_biki.xlsx`: Tablas financieras consolidadas listas para auditoría.
+Haz clic en la imagen para abrir el mapa interactivo en pantalla completa (con zoom y etiquetas):
+
+[![Simulación Biki Valladolid](preview_mapa.png)](https://github.io)
+
+👉 **[Explorar el mapa interactivo aquí](https://github.io)**
+

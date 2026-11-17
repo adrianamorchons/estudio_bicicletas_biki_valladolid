@@ -15,26 +15,12 @@ La investigación se estructura en **cinco grandes bloques metodológicos**:
   * *Zonas críticas por vaciamiento:* Plaza de Santa Cruz (**13,33 %**) y Calle de Andalucía (**15,38 %**).
 * **Preferencias de Flota y Climatología:** El histórico de 2025 confirma un dominio de la bicicleta eléctrica (**82,8 %** de media anual), impulsado por la topografía (acceso a Parquesol) y la fatiga térmica estival (**86,84 %** en agosto), mientras que el calendario académico dispara el uso mecánico en septiembre y octubre (**20,81 %** y **20,14 %**).
 
-#### Visualizaciones del Diagnóstico Operativo y Climatológico
-![Mapa de diagnóstico de estaciones críticas](graficos_mapas/mapa1.png)
-![Matriz de diagnóstico operativo](graficos_mapas/matriz_diagnostico.png)
-![Top 5 estaciones críticas](graficos_mapas/top5.png)
-![Infraestructura de la red](graficos_mapas/infraestructura%20.png)
-![Preferencia de flota eléctrica vs mecánica](graficos_mapas/preferencia_flota.png)
-![Comparativa eléctrica y mecánica](graficos_mapas/electrica_mecanica.png)
-![Impacto climatológico](graficos_mapas/clima_impacto.png)
-![Clima vs usuarios](graficos_mapas/clima_vs_usuarios.png)
-![Distancia media recorrida](graficos_mapas/distancia_media.png)
-![Penetración de la aplicación](graficos_mapas/app_penetracion%20.png)
 
 ---
 
 ### 2. Modelado de Tendencias y Regresión Predictiva
 * **Predicción de Colapso de Capacidad:** Modelo de **Regresión Lineal** ($Y = 212,89X + 6.286,53$) entrenado sobre la serie histórica de altas mensuales. Con un crecimiento medio de **213 usuarios nuevos al mes**, el sistema alcanza el umbral crítico de estrés logístico (**15.696 usuarios**, equivalente a 9 usuarios por anclaje sobre 1.744 anclajes fijos) en el **mes 44,2 (septiembre de 2026)**, justificando la ampliación estructural de la red.
 
-#### Visualizaciones de Tendencias y Regresión
-![Evolución temporal de usuarios](graficos_mapas/usuarios_evolucion_temporal.png)
-![Regresión lineal y umbral de colapso](graficos_mapas/regresion_lineal.png)
 
 ---
 
@@ -60,13 +46,6 @@ La investigación se estructura en **cinco grandes bloques metodológicos**:
   * *Zaratán / Arroyo – Valladolid Centro:* **98,2 % eléctrica**.
   * *Parquesol – Facultad de Medicina (Ruta real OSRM de 5,60 km):* **98,97 % eléctrica**, validando el trazado real por callejero y carriles bici.
 
-#### Visualizaciones del Modelo Logit y Mapas de Corredores
-![Modelo ML de regresión logística](graficos_mapas/ML_logistica.png)
-![Matriz de esfuerzo y pendiente](graficos_mapas/esfuerzo_matriz.png)
-![Mapa de corredores principales](graficos_mapas/mapa2.png)
-![Mapa de ruta real OSRM](graficos_mapas/mapa3.png)
-![Mapa de expansión metropolitana](graficos_mapas/mapa4.png)
-![Mapa de simulación adicional](graficos_mapas/mapa5.png)
 
 ---
 
@@ -74,18 +53,6 @@ La investigación se estructura en **cinco grandes bloques metodológicos**:
 * **Potencial Demográfico del Alfoz:** Análisis de pirámides poblacionales censales destacando el perfil joven de **Arroyo de la Encomienda** (23.304 hab., edad media 37,8 años) y **Zaratán** (6.386 hab., edad media 38,8 años).
 * **Proyección Económica a 5 Años:** Con una inversión inicial (**CAPEX**) de **425.400 €** (4 estaciones en Arroyo y 2 en Zaratán) y unos costes operativos (**OPEX**) de **53.880 €/año**, el proyecto alcanza el punto de equilibrio (*break-even*) en el **mes 6 del Año 2** y genera un **beneficio neto acumulado de 2.241.861,62 € al cierre del Año 5**.
 
-#### Visualizaciones Demográficas y Financieras
-![Pirámide poblacional de Valladolid](graficos_mapas/piramide_vll.png)
-![Pirámide poblacional de Arroyo de la Encomienda](graficos_mapas/piramide_arroyo.png)
-![Pirámide poblacional de Zaratán](graficos_mapas/piramide_zaratan%20.png)
-![Cuota de mercado proyectada](graficos_mapas/cuota_mercado.png)
-![Ingresos estimados en Arroyo](graficos_mapas/rroyo_ingresos_biki%20.png)
-![Ingresos estimados en Zaratán](graficos_mapas/zaratan_ingresos_biki%20.png)
-![Rentabilidad por tarifas](graficos_mapas/tarifas_rentabilidad.png)
-![Flujo de caja acumulado](graficos_mapas/flujo_de_caja.png)
-![Amortización de la inversión](graficos_mapas/amortizacio%CC%81n%20.png)
-![ROI anual del proyecto](graficos_mapas/roi_anual.png)
-![Proyección financiera a 5 años](graficos_mapas/proyeccion_5_an%CC%83os.png)
 
 ---
 

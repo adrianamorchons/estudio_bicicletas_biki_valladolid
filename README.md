@@ -85,7 +85,6 @@ El proyecto ha sido desarrollado en **Python 3.12** utilizando el siguiente ecos
 
 Haz clic en la imagen para abrir el mapa interactivo en pantalla completa (con zoom y etiquetas):
 
-[![Simulación Biki Valladolid](preview_mapa.png)](https://github.io)
+👉 **[Abrir el mapa interactivo en pantalla completa](https://github.io)**
 
-👉 **[Explorar el mapa interactivo aquí](https://github.io)**
 

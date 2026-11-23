@@ -1,4 +1,4 @@
-# Análisis de Estado, Tendencias y Simulación Logística del Sistema BIKI (Valladolid)
+# Estado, Tendencias y Simulación Logística del Sistema BIKI (Valladolid)
 
 Este proyecto realiza un análisis integral de ciencia de datos, modelado predictivo, econometría y viabilidad financiera sobre el sistema de bicicletas públicas **BIKI de Valladolid** (gestionado por AUVASA). El estudio abarca desde la auditoría en tiempo real de la red actual hasta el modelado de elección de flota, enrutamiento ciclista por callejero y simulación económica para la expansión metropolitana hacia **Arroyo de la Encomienda** y **Zaratán**.
 
